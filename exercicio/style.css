@@ -1,0 +1,26 @@
+.container {
+    display: grid;
+    grid-template-columns: 100px 200px 100px;
+    grid-template-rows: 100px 200px;
+    gap: 10px;
+    grid-template-areas: 
+        "header header header"
+        "sidebar content content"
+        "sidebar footer footer";
+}
+.header {
+    grid-area: header;
+    background-color: blue;
+}
+.sidebar {
+    grid-area: sidebar;
+    background-color: coral;
+}
+.content {
+    grid-area: content;
+    background-color: green;
+}
+.footer {
+    grid-area: footer;
+    background-color: yellow;
+}
